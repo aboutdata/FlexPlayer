@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <view:VideoPodClass xmlns:mx="http://www.adobe.com/2006/mxml"
-				    xmlns:view="com.red5.*" initialize="VideoExample()">
+				    xmlns:view="com.red5.*">
 				    
-	<mx:VideoDisplay id="sprct" width="480" height="320"/>  
+	<mx:VideoDisplay id="sprct" width="480" height="320"/>
+	
+	<mx:ApplicationControlBar width="100%" horizontalAlign="center" verticalCenter="true"> 
+		<mx:Button label="开始" id="startBtn" click="start()"/>
+	</mx:ApplicationControlBar>
 	
 </view:VideoPodClass>

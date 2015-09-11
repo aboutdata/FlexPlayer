@@ -6,6 +6,7 @@ package com.red5
 	import flash.net.NetStream;
 	
 	import mx.containers.Box;
+	import mx.controls.Button;
 	import mx.controls.VideoDisplay;
         
 	public class VideoPodClass extends Box
@@ -14,18 +15,20 @@ package com.red5
 		 private var videoURL:String = "stream1441957350700";   
          private var connection:NetConnection;   
 		 public var sprct:VideoDisplay;
-		
+		 public var startBtn:Button;
+		 
 		public function VideoPodClass()
 		{
-			
 		}
 		
-		public function VideoExample():void {   
-                connection = new NetConnection();   
-                connection.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);   
-                connection.addEventListener(SecurityErrorEvent.SECURITY_ERROR,securityErrorHandler); 
-                connection.connect("rtmp://localhost/oflaDemo");   
-        }   
+	   public function start():void
+	   {
+	      	connection = new NetConnection();   
+	        connection.addEventListener(NetStatusEvent.NET_STATUS, netStatusHandler);   
+	        connection.addEventListener(SecurityErrorEvent.SECURITY_ERROR,securityErrorHandler); 
+	        connection.connect("rtmp://localhost/oflaDemo");   
+	      	
+	   }
                
         private function netStatusHandler(event:NetStatusEvent):void {   
                   switch (event.info.code) {   
@@ -55,7 +58,7 @@ package com.red5
                   trace("securityErrorHandler: " + event);   
               }   
                 
-              private function asyncErrorHandler(event:AsyncErrorEvent):void {   
+        private function asyncErrorHandler(event:AsyncErrorEvent):void {   
                   // ignore AsyncErrorEvent events.   
               }   
 

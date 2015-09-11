@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:RecordVideoPodClass xmlns:mx="http://www.adobe.com/2006/mxml"
+				    xmlns:view="com.red5.*">
+				    
+	<mx:VideoDisplay id="recordVideo" width="480" height="320"/>
+	
+	<mx:ApplicationControlBar width="100%" horizontalAlign="center"> 
+		<mx:Button label="录制" id="startRecordBtn" click="publish()"/>
+	</mx:ApplicationControlBar>
+	
+</view:RecordVideoPodClass>

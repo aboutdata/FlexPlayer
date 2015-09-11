@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>   
 <mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
     xmlns:view="com.red5.*">   
-      <mx:Box direction="horizontal" width="100%" height="100%">
-      
-       	<view:VideoPod height="320" width="480" verticalGap="-1" paddingRight="0" paddingBottom="0"/>
-      
-      </mx:Box> 
-     
    
+       	<view:VideoPod height="360" width="480" verticalGap="-1" paddingRight="0" paddingBottom="0"/>
+      	
+       	<view:RecordVideoPod height="360" width="480" verticalGap="-1" paddingRight="0" paddingBottom="0"/>
  </mx:Application> 
 
