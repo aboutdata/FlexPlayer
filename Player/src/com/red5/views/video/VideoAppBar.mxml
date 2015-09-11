@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:VideoAppBarClass xmlns:mx="http://www.adobe.com/2006/mxml"
+					 xmlns:view="com.red5.views.video.*">
+					
+
+	<mx:VBox paddingTop="3">
+		<mx:Label text="日志输出" fontWeight="bold" fontSize="12"/>
+	</mx:VBox>
+	
+</view:VideoAppBarClass>

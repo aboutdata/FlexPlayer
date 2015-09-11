@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:VideoPodClass xmlns:mx="http://www.adobe.com/2006/mxml"
+				    xmlns:view="com.red5.*" initialize="VideoExample()">
+				    
+	<mx:VideoDisplay id="sprct" width="480" height="320"/>  
+	
+</view:VideoPodClass>

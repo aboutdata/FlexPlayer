@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:PublisherClass xmlns:mx="http://www.adobe.com/2006/mxml"
+					 xmlns:view="com.red5.views.*">
+					 
+	<view:VideoPod>
+		
+	</view:VideoPod>
+	
+</view:PublisherClass>

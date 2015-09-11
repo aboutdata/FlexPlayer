@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:VideoPodClass xmlns:mx="http://www.adobe.com/2006/mxml"
+				  xmlns:view="com.red5.views.*"
+				  xmlns:util="org.red5.ui.*"
+				  xmlns:video="com.red5.views.video.*">
+	
+	<video:VideoAppBar width="100%" paddingTop="5" paddingBottom="0"
+				   dock="true" shadowDistance="0.5"/>
+	
+	<mx:Box id="myVideoBox">
+		<mx:VideoDisplay id="videoPlay" width="640" height="480">
+		</mx:VideoDisplay>
+	</mx:Box>
+	
+	<!--mx:Canvas width="100%" height="100%">
+		<util:VideoContainer  video="{ media.videoRemote }" height="100%" width="100%"/>
+	</mx:Canvas-->
+	
+	<mx:Box>
+		<mx:LinkButton id="connectBtn" label="开链接服务器" click="connect()"></mx:LinkButton>
+		<mx:LinkButton id="startBtn" label="开始" click="start()"></mx:LinkButton>
+	</mx:Box>
+	<mx:Box>
+		<mx:Label id="statusLabel">
+			
+		</mx:Label>
+		
+	</mx:Box>
+	
+	<video:VideoControllerBar width="100%" height="55" dock="true"
+					   paddingTop="-2" paddingBottom="0" shadowDistance="1"/>
+</view:VideoPodClass>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view:VideoControllerBarClass xmlns:mx="http://www.adobe.com/2006/mxml"
+				   		xmlns:view="com.red5.views.video.*">
+				   
+	<mx:Box direction="horizontal" height="100%" 
+			paddingLeft="5" paddingRight="10" paddingTop="5"
+			horizontalAlign="right" verticalAlign="middle">
+
+		<mx:Button label="Clear"/>
+	</mx:Box>
+	
+</view:VideoControllerBarClass>
